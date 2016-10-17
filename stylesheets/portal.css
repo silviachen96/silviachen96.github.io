@@ -1,9 +1,12 @@
 ul {
   list-style: none;
-  font-family:arial;
 }
 
 a {
   color: gray;
   text-decoration: none;
+}
+
+body {
+  font-family: 'Abhaya Libre', serif;
 }

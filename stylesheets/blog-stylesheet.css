@@ -1,15 +1,35 @@
+
+/*---Header---*/
+header {
+  padding: 20px;
+  font-size: 30px;
+  text-shadow: -.5px -.5px 8px grey;
+  border: 5px solid white;
+  text-align: center;
+}
+
+byline {
+  color: rgb(255, 236, 223);
+  font-family: tahoma;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 35px;
+}
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: tahoma, sans-serif;
   color: #dfdfdf;
   background-color: #faf1e1;
+  margin-bottom: 10px;
+  background-image: url(https://s-media-cache-ak0.pinimg.com/originals/a8/de/2f/a8de2f999a20735cbf596f5d236beb82.jpg);
 }
 
 section {
   width: 960px;
   margin: auto;
-  background-color: #2d251f;
+  background-color: black;
 }
-
+/*---Navigation---*/
 nav {
   float: right;
   width: 320px;
@@ -29,12 +49,17 @@ footer {
 
 h2 {
   font-size: 32px;
-  color: #d06038;
-  margin-bottom: 16px;
+  color: rgb(200, 254, 255);
+  margin-bottom: 0px
+}
+
+h3 {
+  color: white;
+  margin-bottom: 0px;
 }
 
 p{
-  margin-bottom: 16px;
+  margin-bottom: 10px;
 }
 
 nav ul{
@@ -45,8 +70,8 @@ nav ul{
 nav ul li a{
   display: block;
 
-  background-color: #1e1915;
-  color: #e7dacc;
+  background-color: black;
+  color: rgb(200, 254, 255);
 
   font-weight: bold;
   font-size: 20px;
@@ -54,11 +79,11 @@ nav ul li a{
   line-height: 60px;
   height: 60px;
 
-  text-transform: uppercase;
+  text-transform: lowercase;
   text-decoration: none;
 
-  padding-left: 25px;
-  border-bottom: 5px solid #ead6be;
+  padding-left: 20px;
+  border-bottom: 2px solid #ead6be;
 }
 
 nav ul li a:hover {
@@ -66,7 +91,7 @@ nav ul li a:hover {
 }
 
 header img{
-  display: block;
+  display: inline-block;
 }
 
 ul {
