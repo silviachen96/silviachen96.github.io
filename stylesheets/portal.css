@@ -3,10 +3,22 @@ ul {
 }
 
 a {
-  color: gray;
+  color: white;
   text-decoration: none;
 }
 
 body {
-  font-family: 'Abhaya Libre', serif;
+  font-family: tahoma, serif;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  background-image: url(http://img0.etsystatic.com/000/0/6596101/il_fullxfull.283883040.jpg);
+}
+
+header {
+  text-align: center;
+}
+
+footer {
+  margin-bottom: 5px;
 }
