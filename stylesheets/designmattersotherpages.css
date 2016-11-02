@@ -47,7 +47,7 @@ h2 {
 }
 
 p{
-  margin-bottom: 16px;
+  margin-bottom: 5px;
 }
 
 nav ul{
@@ -57,20 +57,15 @@ nav ul{
 
 nav ul li a{
   display: block;
-
   background-color: black;
   color: white;
-
   font-weight: bold;
   font-size: 20px;
-
   line-height: 60px;
   height: 60px;
-
   text-transform: lowercase;
   text-decoration: none;
-
-  padding-left: 25px;
+  padding-left: 85px;
   border-bottom: black;
 }
 
