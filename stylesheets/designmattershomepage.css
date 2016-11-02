@@ -17,7 +17,7 @@ section {
 body {
   line-height: 1;
   background-color: black;
-  font-family: verdana;
+  font-family: arial;
 }
 
 ol,
@@ -45,19 +45,43 @@ table {
 
 /*end CSS RESET*/
 
+/* ------START STRUCTURAL STYLES-----*/
+.wrapper {
+  width: 1024px;
+  margin: auto;
+}
+
+.columns {
+  position: relative;
+}
+/* ------end structural styles-----*/
+
 /*START header styles*/
 header {
   width: 1024px;
-  padding: 36px 0;
+  padding: 20px;
   margin: auto;
   background-color: black;
   color: white;
-  font-size: 48px;
+  font-size: 30px;
   font-weight: 600;
+  border: 10px solid white;
+  text-align: center;
 }
 
 h1 {
-  margin: 0 36px;
+  letter-spacing:10px;
+  font-variant: small;
+  color: white;
+  font-family: Arial;
+}
+
+byline {
+  color: white;
+  font-family: Arial;
+  letter-spacing: .9px;
+  font-size: 25px;
+  text-align: center;
 }
 /*end header styles*/
 
@@ -110,6 +134,17 @@ nav li:visited {
 /*end structural styles*/
 
 /*START MAIN CONTENT STYLES*/
+.posts {
+  width: 1024px;
+  background-color: black;
+  padding: 25px;
+  font-size: 17px;
+  font-family: arial;
+  text-align: center;
+  border-right: 1px solid black;
+
+}
+
 h2 {
   font-size: 32px;
   color: white;
@@ -125,12 +160,17 @@ p{
 /*START FOOTER STYLES*/
 
 footer {
-  width: 952px;
+  clear: both;
   background-color: black;
-  color: white;
+  text-shadow: -.5px -.5px 8px grey;
+  border: 5px solid white;
+  width: 1024px;
+  padding: 20px;
   margin: auto;
-  padding: 12px 36px;
 }
 
-
+footer a{
+  text-decoration: none;
+  color: white;
+}
 /*end footer styles*/
