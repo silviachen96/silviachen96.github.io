@@ -64,7 +64,7 @@ header {
   color: white;
   font-size: 30px;
   font-weight: 600;
-  text-align: right;
+  text-align: center;
 }
 
 h1 {
@@ -132,6 +132,16 @@ nav li:visited {
   padding: 26px;
   background-color: black;
   color: white;
+  font-size: 30px;
+  text-align: center;
+  font-family: arial;
+  letter-spacing: 5px;
+}
+
+p {
+  font-size: 20px;
+  letter-spacing: normal;
+  text-align: left;
 }
 
 h2 {
@@ -142,54 +152,6 @@ h2 {
 
 p {
   margin: 36px 0 36px 0;
-}
-
-.button {
-  display: inline-block;
-  position: relative;
-  margin-right: -4px;
-}
-
-p {
-  position: absolute;
-  top: 0px;
-  left: 300px;
-  margin: 0px;
-  width: 300px;
-  height: 300px;
-  text-align: center;
-  line-height: 300px;
-  font-family: tahoma;
-  font-size: 24px;
-  font-weight: bold;
-  color: white;
-}
-
-#melvin {
-  background-color: rgba(35, 104, 86, .8);
-  left:300px;
-}
-
-#donald {
-  background-color: rgba(66, 149, 204, .8);
-  left:300px;
-}
-
-#brian {
-  background-color: rgba(185, 66, 704, .8);
-  left:300px;
-}
-
-a:hover #melvin {
-  background-color: rgba(35, 104, 86, .5);
-}
-
-a:hover #donald {
-  background-color: rgba(66, 149, 204, .5);
-}
-
-a:hover #brian{
-  background-color: rgba(185, 66, 704, .5);
 }
 
 /*end main content styles*/
