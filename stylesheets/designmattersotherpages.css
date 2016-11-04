@@ -1,3 +1,56 @@
+/*START CSS RESET*/
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  background-color: black;
+  font-family: arial;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*end CSS RESET*/
+
+/*START STRUCTURAL STYLES*/
+header {
+  display: block;
+  text-align: right;
+}
+
 body {
   font-family: Arial;
   color: white;
@@ -10,6 +63,9 @@ section {
   background-color: black;
 }
 
+/*END STRUCTURAL STYLES*/
+
+/*START NAV STYLES*/
 nav {
   float: left;
   width: 320px;
@@ -30,24 +86,6 @@ footer {
 footer a{
   text-decoration: none;
   color: white;
-}
-
-h1 {
-  font-size: 50px;
-  color: white;
-  margin-bottom: 5px;
-  text-align: center;
-}
-
-h2 {
-  font-size: 32px;
-  color: white;
-  margin-bottom: 16px;
-  text-align: center;
-}
-
-p{
-  margin-bottom: 5px;
 }
 
 nav ul{
@@ -73,7 +111,25 @@ nav ul li a:hover {
   background: gray;
 }
 
-header {
-  display: block;
-  text-align: right;
+/*END NAV STYLES*/
+
+/*START MAIN CONTENT STYLES*/
+h1 {
+  font-size: 50px;
+  color: white;
+  margin-bottom: 5px;
+  text-align: center;
 }
+
+h2 {
+  font-size: 32px;
+  color: white;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+p{
+  margin-bottom: 5px;
+}
+
+/*END MAIN CONTENT STYLES*/
