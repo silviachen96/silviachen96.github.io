@@ -161,14 +161,13 @@ p {
 footer {
   clear: both;
   background-color: black;
-  text-shadow: -.5px -.5px 8px grey;
   width: 1024px;
-  padding: 20px;
   margin: auto;
 }
 
 footer a{
   text-decoration: none;
   color: white;
+  font-size:12px;
 }
 /*end footer styles*/

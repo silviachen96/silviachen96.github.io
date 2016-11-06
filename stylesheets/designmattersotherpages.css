@@ -77,17 +77,6 @@ article {
   padding: 25px;
 }
 
-footer {
-  clear: both;
-  background-color: black;
-  padding: 25px;
-}
-
-footer a{
-  text-decoration: none;
-  color: white;
-}
-
 nav ul{
   list-style-type: none;
   margin-bottom: 60px;
@@ -133,3 +122,17 @@ p{
 }
 
 /*END MAIN CONTENT STYLES*/
+
+/*START FOOTER*/
+footer {
+  clear: both;
+  background-color: black;
+  padding: 25px;
+}
+
+footer a{
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+}
+/*END FOOTER*/
