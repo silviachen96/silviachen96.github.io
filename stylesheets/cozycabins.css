@@ -1,136 +1,228 @@
-/* START CSS RESET */
-
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
-
 /* HTML5 display-role reset for older browsers */
-
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-  display: block;
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
 }
-
 body {
-  line-height: 1.3;
-  background: #e3e3e3;
-  font-family: tahoma, sans-serif;
-  color: #333;
+	line-height: .9em;
+  font-family: 'Montserrat', 'sans-serif';
+  color: white;
+  background-color: #eee;
 }
-
 ol, ul {
-  list-style: none;
+	list-style: none;
 }
-
 blockquote, q {
-  quotes: none;
+	quotes: none;
 }
-
-blockquote:before, blockquote:after, q:before, q:after {
-  content: '';
-  content: none;
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
 }
-
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
 /* end css reset */
 
-body{
-  background-image: url('../images/cc-bg.jpg');
-  background-size: cover;
+/* START STRUCTURAL STYLES */
 
-}
-
-.page{
-  width: 1024px;
+/* mobile */
+.page {
   width: 100%;
-  max-width: 1024px;
+  min-width: 375px;
+  height: 665px;
+  margin: auto;
+  background-image: url("../images/cc-mobile-bg.jpg");
+  background-size: cover; /* cannot be written in shorthand, because background-size is not an included property */
+  position: relative; /* declared to position the nav later - could also be achieved using display: table */
 }
 
-header{
-  width: 1024px;
-
+/* desktop */
+@media (min-width: 724px) {
+  .page {
+    max-width: 1024px;
+    height: 768px;
+    background-image: url("../images/cc-bg.jpg");
+  }
 }
 
+/* mobile */
+header {
+  width: 100%;
+  height: 22%;
+  padding: 10% 0; /* header has a computed height of 32% */
+}
+
+/* desktop */
+@media (min-width: 724px) {
+  header {
+    width: 25%;
+    height: 33%;
+    margin: 0;
+    padding: 2% 0 0 0; /* header has a computed height of 35% */
+  }
+}
+
+/* end structural styles */
+
+/* START NAV STYLES */
+
+/* mobile */
+.nav-mobile {
+  width: 11%;
+  position: absolute;
+  left: 10%;
+  top: 5%; /* percentages are used for positioning to enable smooth scaling */
+}
+
+.nav-desktop {
+  display: none; /* hides desktop nav */
+}
+
+/* desktop */
+@media (min-width: 724px) {
+  .nav-mobile {
+    display: none; /* hides mobile nav */
+  }
+
+  nav {
+    width: 75%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 33%;
+    padding: 2% 0 0 0; /* nav has a computed height of 35% - same as header */
+  }
+
+  .nav-desktop {
+    display: table; /* declared to display nav buttons next to each other */
+    margin-top: 10%;
+  }
+
+  .nav-desktop li {
+    display: table-cell;
+    width: 10%;
+    padding: 3%;
+    white-space: nowrap; /* keeps nav text from breaking into two lines */
+    text-align: center;
+  }
+
+	a:link, a:active {
+		text-decoration: none;
+		color: white;
+	}
+
+	a:visited, a:hover{
+		text-decoration: none;
+		color: #bbb;
+	}
+}
+
+/* end nav styles */
+
+/* START HEADER STYLES */
+
+/* mobile */
 .logo {
-  max-width: 20%;
-  margin: 5%;
-
+  width: 34%;
+  display: block; /* this must be declared so that margin: auto will work */
+  margin: auto;
 }
 
-.menu{
-  display: none;
+/* desktop */
+@media (min-width: 724px) {
+  .logo {
+    width: 80%;
+  }
 }
 
-nav{
-  margin-left: 35%;
-  margin-top: -15%;
+/* end header styles */
+
+/* START MAIN CONTENT STYLES */
+
+/* mobile */
+main {
+  width: 90%;
+  height: 58%;
+  padding-top: 10%;
+  padding-left: 10%;
+}
+
+/* desktop */
+@media (min-width: 724px) {
+  main {
+    width: 70%;
+    height: 52%;
+    padding-left: 30%;
+  }
+}
+
+/* mobile */
+article {
+  width: 80%;
+}
+
+/* desktop */
+@media (min-width: 724px) {
+  article {
+    width: 70%;
+    font-size: 1.125em;
+  }
+}
+
+/* mobile */
+h1 {
+  font-family: 'Corben', 'cursive';
+  font-weight: 700;
+  font-size: 2.375em;
   margin-bottom: 10%;
 }
 
-
-nav ul li{
-  list-style-type: none;
-  display: inline-block;
-  margin-right: 5%;
-  font-weight: lighter;
-}
-
-
-a{
-  text-decoration: none;
-  font-family: 'Montserrat', sans-serif;  font-size: 1.1em;
-  color: #ffffff;
-}
-
-h1{
-  font-size: 4em;
-  color: #ffffff;
-  margin-top: 10%;
-  font-family: 'Corben', cursive;
-  font-weight: regular;
-}
-
-article{
-  margin-left: 35%;
-}
-
-p{
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.12em;
-  color: #ffffff;
-  margin-top: 5%;
-  width: 55%;
-  font-weight: lighter;
-}
-
-@media (max-width: 420px){
-  .logo{
-    max-width: 20%;
-    margin-left: 10%;
-  }
-
-.menu{
-  display: inline;
-  position: absolute;
-  left: 5%;
-  top: 5%;
-  max-width: 10%;
-}
-
-  article{
-    margin-left: 10%;
-
-  }
-
-  nav{
-    display: none;
+/* desktop */
+@media (min-width: 724px) {
+  h1 {
+    font-size: 4em;
   }
 }
+
+/* mobile */
+p {
+  font-size: .65em;
+  margin-top: 15%;
+}
+
+p:last-child {
+  margin-top: auto;
+}
+
+/* desktop */
+@media (min-width: 724px) {
+  p {
+    margin-top: 5%;
+  }
+}
+
+/* end main content styles */
