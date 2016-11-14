@@ -3,16 +3,15 @@ ul {
 }
 
 a {
-  color: white;
+  color: black;
   text-decoration: none;
 }
 
 body {
   font-family: tahoma, serif;
   text-align: center;
-  font-size: 25px;
-  font-weight: bold;
-  background-image: url(http://cdn.paper4pc.com/images/coffee-wallpaper-17.jpg);
+  font-size: 20px;
+  background-image: url(http://wallpaperlayer.com/img/2015/8/tumblr-beach-waves-backgrounds-7096-7377-hd-wallpapers.jpg);
 }
 
 header {
@@ -20,7 +19,7 @@ header {
 }
 
 h6 {
-  color: white;
+  color: black;
   font-size: 12px;
   margin: auto;
   text-align: left;
