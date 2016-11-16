@@ -58,9 +58,8 @@ table {
   height: 665px;
   margin: auto;
   background-image: url("../images/cc-mobile-bg.jpg");
-  background-size: cover; /* cannot be written in shorthand, because background-size is not an included property */
-  position: relative; /* declared to position the nav later - could also be achieved using display: table */
-}
+  background-size: cover;
+  position: relative;
 
 /* desktop */
 @media (min-width: 724px) {
@@ -75,7 +74,7 @@ table {
 header {
   width: 100%;
   height: 22%;
-  padding: 10% 0; /* header has a computed height of 32% */
+  padding: 10% 0;
 }
 
 /* desktop */
@@ -84,30 +83,28 @@ header {
     width: 25%;
     height: 33%;
     margin: 0;
-    padding: 2% 0 0 0; /* header has a computed height of 35% */
+    padding: 2% 0 0 0;
   }
 }
 
 /* end structural styles */
-
-/* START NAV STYLES */
 
 /* mobile */
 .nav-mobile {
   width: 11%;
   position: absolute;
   left: 10%;
-  top: 5%; /* percentages are used for positioning to enable smooth scaling */
+  top: 5%;
 }
 
 .nav-desktop {
-  display: none; /* hides desktop nav */
+  display: none;
 }
 
 /* desktop */
 @media (min-width: 724px) {
   .nav-mobile {
-    display: none; /* hides mobile nav */
+    display: none;
   }
 
   nav {
@@ -116,11 +113,11 @@ header {
     top: 0;
     right: 0;
     height: 33%;
-    padding: 2% 0 0 0; /* nav has a computed height of 35% - same as header */
+    padding: 2% 0 0 0;
   }
 
   .nav-desktop {
-    display: table; /* declared to display nav buttons next to each other */
+    display: table;
     margin-top: 10%;
   }
 
@@ -128,7 +125,7 @@ header {
     display: table-cell;
     width: 10%;
     padding: 3%;
-    white-space: nowrap; /* keeps nav text from breaking into two lines */
+    white-space: nowrap;
     text-align: center;
   }
 
@@ -226,5 +223,3 @@ p:last-child {
     margin-top: 5%;
   }
 }
-
-/* end main content styles */
