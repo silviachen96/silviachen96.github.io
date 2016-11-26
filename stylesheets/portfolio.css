@@ -1,0 +1,372 @@
+/* ------CSS RESET-----*/
+
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0%;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  font-family: tahoma;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ------end RESET-----*/
+
+/*----STRUCTURE---*/
+
+.wrapper {
+  margin: auto;
+  max-width: 1024px;
+}
+
+
+section {
+  width: 85%;
+  margin: auto;
+  background-color: white;
+}
+
+/*---end STRUCTURE---*/
+
+/*----HEADER---*/
+
+header {
+  width: 80%;
+  height: 200px;
+  display: table;
+  margin: auto;
+}
+
+.logo-wrapper {
+  width: 19%;
+  display: table-cell;
+  margin-left: 1%;
+}
+
+.headline-wrapper {
+  display: table-cell;
+  vertical-align: bottom;
+  padding-left: 1%;
+}
+
+
+p {
+  font-family: tahoma;
+  font-weight: 300;
+  margin-bottom: 4%;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+h3 {
+  font-family: tahoma;
+  font-size: 50px;
+  font-weight: 400;
+  margin-bottom: 1%;
+  margin-top: 20%;
+}
+
+/*------------ TABLET header----------*/
+
+@media (max-width: 768px) {
+  .logo-wrapper {
+    width: 100%;
+    margin: 5% 0 5% 0;
+    display: block;
+    text-align: center;
+  }
+
+  .headline-wrapper {
+    display: block;
+    padding: 0;
+    text-align: center;
+  }
+}
+/*---end TABLET header---*/
+
+/*---end HEADER--*/
+
+/*--NAV---*/
+nav {
+  width: 85%;
+  margin: auto;
+}
+
+nav ul {
+  display: table;
+  width: 100%;
+}
+
+nav li {
+  display: table-cell;
+  text-align: center;
+}
+
+nav li:nth child(1),
+nav li:nth child(4) {
+  text-align: left;
+}
+
+nav li:nth child(3),
+nav li:nth child(6) {
+  text-align: right;
+}
+
+nav li img {
+  width: 100%;
+}
+
+nav .row1,
+nav .row2 {
+  display: table-row;
+}
+
+nav .row1 li {
+  padding-bottom: 1%;
+}
+
+/*--------MOBILE pic nav---------*/
+@media (max-width: 375px) {
+  nav li {
+    display: block;
+    padding-bottom: 5%;
+    text-align: center;
+  }
+  nav li:nth-child(1),
+  nav li:nth-child(3),
+  nav li:nth-child(4),
+  nav li:nth-child(6) {
+    text-align:center;
+  }
+}
+/*---end MOBILE pic nav---*/
+
+/*---INTERNAL NAV---*/
+.internal-nav li {
+  font-family: tahoma;
+  font-weight: 300;
+}
+
+.internal-nav li a {
+  text-decoration: none;
+  color: black;
+}
+
+/*---end NAV--*/
+
+/*---MAIN content--*/
+figure {
+  display: table;
+  margin-top: 5%;
+}
+
+figure img {
+  width: 70%;
+  display: table-cell;
+  margin: 0 3% 15% 15%;
+}
+
+figcaption {
+  width: 35%;
+  display: table-cell;
+  vertical-align: top;
+}
+
+figcaption p {
+  margin-top: 5%;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  line-height: 1.5em;
+}
+
+main h3 {
+  margin-top: 15%;
+  margin-right: 5%;
+  font-family: 'Delius Unicase', cursive;
+  font-weight: 400;
+  font-size: 2em;
+}
+
+main h4 {
+  margin-top: 3%;
+  margin-right: 5%;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+}
+
+main p {
+  margin-top: 3%;
+  margin-right: 5%;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  line-height: 1.5em;
+}
+
+/*-----TABLET internal page---*/
+@media (max-width: 768px) {
+  figure {
+    display: block;
+  }
+
+  figure img {
+    width: 100%;
+    margin: 50% 0 50% 0;
+  }
+}
+
+/*--end MAIN--*/
+
+/*---FOOTER---*/
+footer {
+  width: 85%;
+  margin: auto;
+  height: 60px;
+  background-color: black;
+}
+
+footer p {
+  display: inline-block;
+  margin: 5% 3% 1% 1%;
+  text-align: left;
+  font-family: tahoma;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+/*---MOBILE FOOTER---*/
+@media (max-width: 375px) {
+  footer {
+    height: 80px;
+  }
+}
+
+@media (max-width: 375px) {
+  footer p {
+    display: block;
+  }
+}
+
+/*---end FOOTER---*/
