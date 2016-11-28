@@ -213,6 +213,10 @@ h3 {
 /*---end HEADER--*/
 
 /*--NAV---*/
+img {
+  text-align: center;
+}
+
 nav {
   width: 85%;
   margin: auto;
