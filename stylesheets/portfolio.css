@@ -341,7 +341,6 @@ footer {
   width: 85%;
   margin: auto;
   height: 60px;
-  background-color: black;
 }
 
 footer p {
@@ -353,7 +352,7 @@ footer p {
 
 footer a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 /*---MOBILE FOOTER---*/
