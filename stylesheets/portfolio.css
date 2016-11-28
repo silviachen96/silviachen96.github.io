@@ -266,6 +266,7 @@ nav .row1 li {
 .internal-nav li {
   font-family: tahoma;
   font-weight: 300;
+  font-size: 20px;
 }
 
 .internal-nav li a {
@@ -303,25 +304,11 @@ figcaption p {
 main h3 {
   margin-top: 15%;
   margin-right: 5%;
-  font-family: 'Delius Unicase', cursive;
+  font-family: sans serif;
   font-weight: 400;
   font-size: 2em;
 }
 
-main h4 {
-  margin-top: 3%;
-  margin-right: 5%;
-  font-family: 'Oswald', sans-serif;
-  font-weight: 400;
-}
-
-main p {
-  margin-top: 3%;
-  margin-right: 5%;
-  font-family: 'Oswald', sans-serif;
-  font-weight: 300;
-  line-height: 1.5em;
-}
 
 /*-----TABLET internal page---*/
 @media (max-width: 768px) {
