@@ -178,12 +178,18 @@ p {
   line-height: 1.5em;
 }
 
+h2{
+  font-family: sans-serif;
+  font-size:50px;
+  margin-top: 5%;
+}
+
 h3 {
   font-family: sans-serif;;
-  font-size: 50px;
+  font-size: 15px;
   font-weight: 400;
-  margin-bottom: 1%;
-  margin-top: 10%;
+  margin-bottom: 3%;
+  margin-top: 3%;
 }
 
 /*------------ TABLET header----------*/
