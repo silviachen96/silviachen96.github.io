@@ -252,12 +252,6 @@ nav .row1 li {
     padding-bottom: 5%;
     text-align: center;
   }
-  nav li:nth-child(1),
-  nav li:nth-child(3),
-  nav li:nth-child(4),
-  nav li:nth-child(6) {
-    text-align:center;
-  }
 
 }
 /*---end MOBILE pic nav---*/
@@ -294,17 +288,10 @@ figcaption {
   vertical-align: top;
 }
 
-figcaption p {
-  margin-top: 5%;
-  font-family: 'Oswald', sans-serif;
-  font-weight: 300;
-  line-height: 1.5em;
-}
-
 main h3 {
   margin-top: 15%;
   margin-right: 5%;
-  font-family: sans serif;
+  font-family: tahoma;
   font-weight: 400;
   font-size: 2em;
 }
