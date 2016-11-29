@@ -171,10 +171,10 @@ header {
 
 
 p {
-  font-family: sans-serif;;
+  font-family: tahoma;
   font-weight: 300;
-  margin-bottom: 4%;
-  font-size: 1em;
+  margin-bottom: 1%;
+  font-size: 20px;
   line-height: 1.5em;
 }
 
