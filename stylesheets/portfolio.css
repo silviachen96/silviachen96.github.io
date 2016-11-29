@@ -173,8 +173,8 @@ header {
 p {
   font-family: tahoma;
   font-weight: 300;
-  margin-bottom: 1%;
-  font-size: 20px;
+  margin-bottom: 4%;
+  font-size: 15px;
   line-height: 1.5em;
 }
 
@@ -185,7 +185,7 @@ h2{
 }
 
 h3 {
-  font-family: sans-serif;;
+  font-family: tahoma;
   font-size: 15px;
   font-weight: 400;
   margin-bottom: 3%;
